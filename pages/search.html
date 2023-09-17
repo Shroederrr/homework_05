@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук авто | AutoMarket UA</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<div class="wrapper">
+    <body>
+        <header class="header">
+            <div class="header__container">
+                <a class="header__item--add" href="../index.html" title="Продати/купити авто по вигідним цінам">
+                    <img src="../img/site_logo.png" alt="Продати/купити авто по вигідним цінам">
+                </a>
+                <div class="header__item">
+                    <h1 class="header__article">
+                        Пошук авто
+                    </h1>
+                </div>
+                <div class="header__logon">
+                    <a href="./signin.html" class="header__logon--button">
+                        <div class="header__logon icon-button">
+                            <span class="header__logon--text">Увійти</span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__menu">
+                        <li class="nav__menu--item">
+                            <a class="nav__menu--link" href="#" title="Знайти авто">
+                                Пошук авто
+                            </a>
+                        </li>
+                        <li class="nav__menu--item">
+                            Продати авто
+                        </li>
+                        <li class="nav__menu--item">
+                            Автосалони
+                        </li>
+                        <li class="nav__menu--item">
+                            Обмін авто
+                        </li>
+                        <li class="nav__menu--item">
+                            Відгуки
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <search class="search">
+            <form action="https://fom.in.ua/echo" class="form__search">
+                <p>
+                    <label for="search" accesskey="S">
+                        Знайти авто
+                    </label>
+                    <input id="search" type="search" name="query" />
+                
+                </p>
+                <button type="submit">Шукати авто</button>
+            </form>
+        </search>
+        <div class="list">
+            <select name="select1">
+                <option value="value1">text 1</option>
+                <option value="value2">text 2</option>
+                <option value="value3">text 3</option>
+            </select>
+        </div>
+    </body>
+</div>
+</html>

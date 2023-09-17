@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Купівля та продаж авто | AutoMarket UA</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<div class="wrapper">
+    <body>
+        <header class="header">
+            <div class="header__container">
+                <a class="header__item--add" href="index.html" title="Продати/купити авто по вигідним цінам">
+                    <img src="img/site_logo.png" alt="Продати/купити авто по вигідним цінам">
+                </a>
+                <div class="header__item">
+                    <h1 class="header__article">
+                        Для пошуку авто, зареєструйтесь
+                    </h1>
+                </div>
+                <div class="header__logon">
+                    <a href="pages/signin.html" class="header__logon--button">
+                        <div class="header__logon icon-button">
+                            <span class="header__logon--text">Увійти</span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__menu">
+                        <li class="nav__menu--item">
+                            <a class="nav__menu--link" href="./pages/search.html" title="Знайти авто">
+                                Пошук авто
+                            </a>
+                        </li>
+                        <li class="nav__menu--item">
+                            Продати авто
+                        </li>
+                        <li class="nav__menu--item">
+                            Автосалони
+                        </li>
+                        <li class="nav__menu--item">
+                            Обмін авто
+                        </li>
+                        <li class="nav__menu--item">
+                            Відгуки
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <form action="https://fom.in.ua/echo" class="reg" method="POST">
+            <signin class="reg__form">
+                <h2 class="reg__form--title">Зареєструватися на сайті</h2>
+                <input type="text" name="email" placeholder="Email">
+                <input type="password" name="pass" placeholder="Password">
+                <input type="password" name="cpass" placeholder="Confirm Password">
+                <button type="submit" class="reg__form--btn" name="registration">Зареєструватись</button>
+            </signin>
+        </form>
+    </body>
+</div>
+</html>
