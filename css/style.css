@@ -187,3 +187,31 @@ body {
 .reg__form--btn:hover {
     box-shadow: 0 0 0 2px white, 0 0 0 3px #7d7d7d;
 }
+
+/* 10 */
+.main-content, 
+/* 10 */
+.main-content--add {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 10 */
+.main-content__item {
+    text-align: center;
+    font-size: 1.25rem;
+    border: 1px solid rgb(145 145 145 / 40%);
+    border-radius: 0.5rem;
+    box-shadow: -2px 1px 7px 0px rgb(145 145 145 / 40%);
+}
+
+/* 10 */
+.main-content__img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+/* 10 */
+.desc-list__item {
+    color: rgb(119, 119, 119);
+}
