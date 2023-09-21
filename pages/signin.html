@@ -7,7 +7,66 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    
-</body>
+<div class="wrapper">
+    <body>
+        <header class="header">
+            <div class="header__container">
+                <a class="header__item--add" href="../index.html" title="Продати/купити авто по вигідним цінам">
+                    <img src="../img/site_logo.png" alt="Продати/купити авто по вигідним цінам">
+                </a>
+                <div class="header__item">
+                    <h1 class="header__article">
+                        Увійти в особистий кабінет
+                    </h1>
+                </div>
+                <div class="header__logon">
+                    <a href="./signin.html" class="header__logon--button">
+                        <div class="header__logon icon-button">
+                            <span class="header__logon--text">Увійти</span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__menu">
+                        <li class="nav__menu--item">
+                            <a class="nav__menu--link" href="./search.html" title="Знайти авто">
+                                Пошук авто
+                            </a>
+                        </li>
+                        <li class="nav__menu--item">
+                            Продати авто
+                        </li>
+                        <li class="nav__menu--item">
+                            Автосалони
+                        </li>
+                        <li class="nav__menu--item">
+                            Обмін авто
+                        </li>
+                        <li class="nav__menu--item">
+                            Відгуки
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="signin">
+            <form action="https://fom.in.ua/echo" class="signin__form" method="post">
+                <label for="username" class="signin__label--add">
+                    Логін
+                    <i>e-mail, тел</i>
+                </label>
+                <div class="signin__login fieldset">
+                    <input type="text" name="username" placeholder="Логін або номер телефону" class="signin__login--primary">
+                </div>
+                <label for="password" class="signin__label--mod">
+                    Пароль
+                </label>
+                <div class="signin__password fieldset">
+                    <input type="password" name="password" placeholder="Пароль" class="signin__password--secondary">
+                </div>
+                <button type="submit" class="signin__form--btn">Увійти</button>
+            </form>
+        </div>
+    <body>
+</div>
 </html>
