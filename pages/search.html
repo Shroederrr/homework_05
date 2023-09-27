@@ -49,10 +49,10 @@
                 </nav>
             </div>
         </header>
-
+    <div class="section">
         <search class="search">
             <div class="search__container">
-                <p class="search__naming">
+                <p class="search__article">
                     Знайти авто:
                 </p>
                 <form action="https://fom.in.ua/echo" class="search__form" method="post">
@@ -106,6 +106,9 @@
                     <label for="" class="search__form--item">
                         Тип кузова
                         <select name="BodyType">
+                            <option value="Any">
+                                Будь-який
+                            </option>
                             <option value="Sedan">
                                 Седан
                             </option>
@@ -126,6 +129,63 @@
                             </option>
                             <option value="Crossover">
                                 Кросовер
+                            </option>
+                        </select>
+                    </label>
+                    <label for="" class="search__form--item">
+                        Тип палива
+                        <select name="FuelType">
+                            <option value="Any">
+                                Будь-який
+                            </option>
+                            <option value="Gas">
+                                Бензин
+                            </option>
+                            <option value="Propane">
+                                Газ
+                            </option>
+                            <option value="Gas/Propane">
+                                Газ/бензин
+                            </option>
+                            <option value="Diesel">
+                                Дизель
+                            </option>
+                            <option value="Electric">
+                                Електро
+                            </option>
+                            <option value="Hybrid">
+                                Гібрид
+                            </option>
+                        </select>
+                    </label>
+                    <label for="" class="search__form--item">
+                        Тип коробки передач
+                        <select name="Gearbox">
+                            <option value="Any">
+                                Будь-яка
+                            </option>
+                            <option value="Mechanic">
+                                Механіка
+                            </option>
+                            <option value="Auto">
+                                Автомат
+                            </option>
+                        </select>
+                    </label>
+                    <label for="" class="search__form--item">
+                        Тип приводу
+                        <select name="Drive">
+                            <option value="Any">
+                                Будь-який
+                            </option>
+                            <option value="FWD">
+                                Передній
+                            </option>
+                            <option value="RWD">
+                                Задній
+                            </option>
+                            <option value="AWD">
+                                Повний
                             </option>
                         </select>
                     </label>
@@ -238,7 +298,7 @@
                     </label>
                     <label for="" class="search__form--item">
                         Ціна до
-                        <select name="PriceFrom">
+                        <select name="PriceTo">
                             <option value="WithoutPrice">
                                 Без ціни
                             </option>
@@ -682,24 +742,105 @@
                             </option>
                         </select>
                     </label>
+                    <label for="" class="search__form--item">
+                        Місто
+                        <select name="City">
+                            <option value="Any">
+                                Будь-яке
+                            </option>
+                            <option value="Kiev">
+                                Київ
+                            </option>
+                            <option value="Kharkiv">
+                                Харків
+                            </option>
+                            <option value="Odessa">
+                                Одеса
+                            </option>
+                            <option value="Dnipro">
+                                Дніпро
+                            </option>
+                            <option value="Poltava">
+                                Полтава
+                            </option>
+                            <option value="Lviv">
+                                Львів
+                            </option>
+                            <option value="Sumy">
+                                Суми
+                            </option>
+                            <option value="Ivano-Frankivsk">
+                                Івано-Франківськ
+                            </option>
+                            <option value="Rivne">
+                                Рівне
+                            </option>
+                            <option value="Ternopil">
+                                Тернопіль
+                            </option>
+                            <option value="Khmelnitskiy">
+                                Хмельницький
+                            </option>
+                            <option value="Chernivtsy">
+                                Чернівці
+                            </option>
+                            <option value="Vynnitsya">
+                                Вінниця
+                            </option>
+                            <option value="Zhitomyr">
+                                Житомир
+                            </option>
+                            <option value="Kropivnits'kiy">
+                                Кропивницький
+                            </option>
+                            <option value="Cherkasy">
+                                Черкаси
+                            </option>
+                            <option value="Chernigiv">
+                                Чернігів
+                            </option>
+                            <option value="Donetsk">
+                                Донецьк
+                            </option>
+                            <option value="Zaporizhia">
+                                Запоріжжя
+                            </option>
+                            <option value="Lugans'k">
+                                Луганьск
+                            </option>
+                        </select>
+                    </label>
                         Стан
                     <label for="" class="search__form--item">
-                        <input type="checkbox" name="Good">
+                        <input type="checkbox" name="Condition" value="Good">
                         Гарний
                     </label>
                     <label for="" class="search__form--item">
-
+                        <input type="checkbox" name="Condition" value="Normal">
+                        Задовільний
                     </label>
                     <label for="" class="search__form--item">
-
+                        <input type="checkbox" name="Condition" value="Need repair">
+                        Потребує ремонту
                     </label>
                     <label for="" class="search__form--item">
-
+                        <input type="checkbox" name="Condition" value="Uncleared">
+                        Нерозмитнена
                     </label>
+                    <label for="" class="search__form--item">
+                        <input type="checkbox" name="Condition" value="After accident">
+                        Після ДТП
+                    </label>
+                    <button type="submit" class="search__form--btn">Шукати</button>
                 </form>
             </div>
         </search>
-
+        <div class="search__img">
+            <div class="search__img--container">
+                <img src="../img/search_img.jpg" alt="BMW E30 Red Coupe" class="search__img--content">
+            </div>
+        </div>
+    </div>
         <footer class="footer">
             <nav class="nav__footer">
                 <ul class="nav__footer--menu">

@@ -172,7 +172,10 @@ body {
 }
 
 /* 10 */
+.search__form--btn, 
+/* 10 */
 .reg__form--btn, 
+/* 10 */
 .signin__form--btn {
     text-align: center;
     background: #e7e7e7;
@@ -190,7 +193,9 @@ body {
 /* 20 */
 .reg__form--btn:hover, 
 /* 20 */
-.signin__form--btn:hover {
+.signin__form--btn:hover, 
+/* 20 */
+.search__form--btn:hover {
     box-shadow: 0 0 0 2px white, 0 0 0 3px #7d7d7d;
 }
 
@@ -250,7 +255,6 @@ body {
     border-radius: 3px;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
     padding: 20px 30px;
-    box-sizing: border-box;
     width: 400px;
     margin: 25px 0 25px;
 }
@@ -322,3 +326,57 @@ body {
 }
 
 /* Car Search */
+
+/* 10 */
+.search {
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgb(145 145 145 / 40%);
+    padding: 10px;
+    margin: 2%;
+
+    /* 10 */
+    .search__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        /* 10 */
+        .search__article {
+            line-height: 1.5;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: rgb(81, 81, 81);
+        }
+
+        /* 10 */
+        .search__form--item {
+            display: block;
+            margin-bottom: 7px;
+            
+        }
+    }
+}
+
+/* 11 */
+.search__form--item select {
+    width: 100%;
+    padding: 3% 0;
+    margin-top: 10px;
+}
+
+.section {
+    display: flex;
+    align-items: flex-start;
+}
+
+.search__img {
+    .search__img--container {
+        display: flex;
+        margin: 2.85% 2% 2%;
+        .search__img--content {
+            width: 100%;
+        }
+    }
+}
