@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<div class="wrapper">
-    <body>
+<body>
+    <div class="wrapper">
         <header class="header">
             <div class="header__container">
                 <a class="header__item--add" href="index.html" title="Продати/купити авто по вигідним цінам">
@@ -16,7 +16,7 @@
                 </a>
                 <div class="header__item">
                     <h1 class="header__article">
-                        Для пошуку авто, зареєструйтесь
+                        Авто Маркет | Україна
                     </h1>
                 </div>
                 <div class="header__logon">
@@ -50,13 +50,13 @@
             </div>
         </header>
         <form action="https://fom.in.ua/echo" class="reg" method="POST">
-            <signin class="reg__form">
+            <div class="reg__form">
                 <h2 class="reg__form--title">Зареєструватися на сайті</h2>
-                <input type="text" name="E-mail" placeholder="Email" required="required">
+                <input type="email" name="E-mail" placeholder="Email" required="required">
                 <input type="password" name="Password" placeholder="Password" required="required">
                 <input type="password" name="CheckPass" placeholder="Confirm Password" required="required">
                 <button type="submit" class="reg__form--btn" name="Registration" value="OK">Зареєструватись</button>
-            </signin>
+            </div>
         </form>
         <div class="main-content">
             <div class="main-content__item">
@@ -291,10 +291,10 @@
                     <a href="https://github.com/Shroederrr/homework_05" class="footer__desc--link">
                         Боженьки.
                     </a>
-                    <br> 2023 &copy
+                    <br> 2023 &copy;
                 </p>
             </div>
         </footer>
-    </body>
-</div>
+    </div>
+</body>
 </html>
